@@ -4,7 +4,7 @@
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="main.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>HomeMeteostation v0.6</title>
+        <title>HomeMeteostation v0.<?php include("version.php"); ?></title>
         <style type="text/css">
             .container {width: 960px; margin: 0 auto; overflow: hidden;}
             .clock {width:800px; margin:0 auto; padding:30px; border:1px solid #333; color:#fff; }
@@ -65,9 +65,9 @@
         <link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/jquery/CSS3-digital-clock/index.html" />
     </head>
     <body>
-        <h1>Home meteostation on Arduino board v0.6
+        <h1>Home meteostation on Arduino board v0.<?php include("version.php"); ?>
         	<small>
-        		<a href="http://www.vk.com/fox_3">Log</a>
+        		<a href="graph.php">Graph</a>
         		 | Author by Igor Polyakov| 
         		<a href="http://www.vk.com/fox_3">Contact</a>
         	</small>

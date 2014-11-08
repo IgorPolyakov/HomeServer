@@ -4,35 +4,19 @@
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="main.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>HomeMeteostation v0.66</title>
-        <script type="text/javascript" src="dygraph-combined.js"></script> 
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script src="http://code.highcharts.com/highcharts.js"></script>
-		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+        <title>HomeMeteostation v0.<?php include("version.php"); ?></title>
+
     </head>
     <body>
-        <h1>Home meteostation on Arduino board v0.65
+        <h1>Home meteostation on Arduino board v0.<?php include("version.php");  ?>
         	<small>
-        		<a href="graph.php">Graph</a>
+        		<a href="draw.php">draw</a>
         		 | Author by Igor Polyakov| 
         		<a href="http://www.vk.com/fox_3">Contact</a>
         	</small>
         </h1>
-
-	<div id="graphdiv">
-		<script type="text/javascript">
-		  g = new Dygraph(
-
-		    // containing div
-		    document.getElementById("graphdiv"),"output.cvs", {
-				  legend: 'always',
-				  title: 'LOG',
-				  showRoller: true,
-				  rollPeriod: 14,
-				  customBars: true,
-				  ylabel: 'Temperature (F)',
-				});
-		</script>
-	</div>
+        <center>
+			<img src="draw.php?ImageMap=get&w=680&h=320" id="testPicture" alt="" class="pChartPicture"/>
+		</center>
     </body>
 </html>
