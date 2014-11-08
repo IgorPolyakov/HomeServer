@@ -66,11 +66,12 @@
     </head>
     <body>
         <h1>Home meteostation on Arduino board v0.<?php include("version.php"); ?>
-        	<small>
-        		<a href="graph.php">Graph</a>
-        		 | Author by Igor Polyakov| 
-        		<a href="http://www.vk.com/fox_3">Contact</a>
-        	</small>
+            <small>
+                | Author by Igor Polyakov| 
+                <a href="graph.php">Graphics|</a> 
+                <a href="map.php">Map|</a>
+                <a href="http://www.vk.com/fox_3">Contact|</a>
+            </small>
         </h1>
         <div class="container">
             <div class="clock">
@@ -86,8 +87,9 @@
 	        <h2>
 	        	<?php
 		        	$db = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', 'mys1234!@#$');
-					foreach($db->query('SELECT * FROM dat WHERE Id=(SELECT MAX(Id) FROM dat)') as $row) {
-		    			echo  '    '.$row['temperature'].'&deg;C     '.$row['pressure'].'%     '.$row['humidity'].'mm     '.'LIGTH ON';//$row['light'];
+					foreach($db->query('SELECT * FROM inform WHERE Id=(SELECT MAX(Id) FROM inform)') as $row) {
+		    			echo  '    '.$row['temperature'].'&deg;C     '.$row['pressure'].'%     '.$row['humidity'].'mm     ';
+                        echo $row['light'] == 1 ? 'LIGTH ON':'LIGTH OFF';
 					}
 	        	?>
 	        </h2>
