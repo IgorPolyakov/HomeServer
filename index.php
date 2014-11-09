@@ -62,15 +62,18 @@
             	
             }); 
         </script>
-        <link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/jquery/CSS3-digital-clock/index.html" />
     </head>
     <body>
         <h1>Home meteostation on Arduino board v0.<?php include("version.php"); ?>
             <small>
-                | Author by Igor Polyakov| 
-                <a href="graph.php">Graphics|</a> 
-                <a href="map.php">Map|</a>
-                <a href="http://www.vk.com/fox_3">Contact|</a>
+                <a href="http://www.vk.com/fox_3">Author by Igor Polyakov</a>
+                <div class="hr">
+                      <li><a href="index.php">MAIN </a></li>
+                      <li><a href="graph_pres.php"> pressure </a></li>
+                      <li><a href="graph_temp.php">temperature </a></li>
+                      <li><a href="graph_humid.php">humidity </a></li>
+                      <li><a href="graph_ligth.php">light </a></li>
+                </div>
             </small>
         </h1>
         <div class="container">

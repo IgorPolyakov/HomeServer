@@ -13,9 +13,12 @@ $points_tempr = array();
 $points_date = array();
 $last_data = 10;
 $border = 20;
+$query_png = isset($_GET['query_png']) ? $_GET['query_png'] : 'temperature';
+$typeGraph = isset($_GET['typeGraph']) ? $_GET['typeGraph'] : 'drawFilledSplineChart';
+//typeGraph=drawFilledStepChart
 foreach ($db->query('SELECT * FROM inform WHERE Id > (SELECT MAX(Id)-'.$last_data.' FROM inform)') as $row)
 {
-	$points_tempr[] = $row['temperature'];
+	$points_tempr[] = $row[$query_png];
 	$points_date[] = $row['time'];
 
 }
@@ -49,11 +52,12 @@ $myPicture->setGraphArea($border,$border,$w-$border,$h-$border);
 $myPicture->setFontProperties(array("R"=>255,"G"=>255,"B"=>255,"FontName"=>"fonts/pf_arma_five.ttf","FontSize"=>6));
 
 $Settings = array("Pos"=>SCALE_POS_LEFTRIGHT
-, "Mode"=>SCALE_MODE_ADDALL
+//, "Mode"=>SCALE_MODE_ADDALL
+, "Mode"=>SCALE_MODE_FLOATING
 , "LabelingMethod"=>LABELING_ALL
 , "GridR"=>255, "GridG"=>255, "GridB"=>255, "GridAlpha"=>100, "TickR"=>0, "TickG"=>0, "TickB"=>0, "TickAlpha"=>50, "LabelRotation"=>0, "LabelSkip"=>$last_data/5, "CycleBackground"=>1, "DrawXLines"=>1, "DrawSubTicks"=>1, "SubTickR"=>0, "SubTickG"=>0, "SubTickB"=>0, "SubTickAlpha"=>50, "DrawYLines"=>ALL);
 $myPicture->drawScale($Settings);
 
 $Config = array("DisplayValues"=>1, "ForceTransparency"=>50, "AroundZero"=>1);
-$myPicture->drawFilledSplineChart($Config);
+$myPicture->$typeGraph($Config);
  $myPicture->autoOutput("pictures/example.drawLineChart.simple.png");
