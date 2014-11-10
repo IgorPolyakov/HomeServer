@@ -4,7 +4,7 @@
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="main.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>HomeMeteostation</title>
+        <title>HomeMeteostation <?php include("version.php"); ?> </title>
         <style type="text/css">
             .container {width: 960px; margin: 0 auto; overflow: hidden;}
             .clock {width:800px; margin:0 auto; padding:30px; border:1px solid #333; color:#fff; }

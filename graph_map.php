@@ -6,13 +6,16 @@
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="main.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>HomeMeteostation v0.<?php include("version.php"); ?></title>
+        <title>HomeMeteostation <?php include("version.php"); ?> </title>
 
     </head>
     <body onunload="GUnload()">
-        <h1>Home meteostation on Arduino board v0.<?php include("version.php");  ?>
+        <h1>Home meteostation on Arduino board
             <small>
-                <a href="http://www.vk.com/fox_3">Author by Igor Polyakov</a>
+                <br>
+                    <?php include("version.php"); ?>
+                    <a href="http://www.vk.com/fox_3">Author by Igor Polyakov</a>
+                </br>
                 <div class="hr">
                       <li><a href="index.php">MAIN </a></li>
                       <li><a href="graph_pres.php"> pressure </a></li>
@@ -23,6 +26,9 @@
                 </div>
             </small>
         </h1>
+        <center>
+          <img src="home.png" alt="Mountain View" style="width:680px;height:602px">
+        </center>         
         <center>
           <div id="map_canvas" style="width: 680px; height: 320px"></div> 
 
