@@ -17,6 +17,7 @@
                       <li><a href="graph_temp.php">temperature </a></li>
                       <li><a href="graph_humid.php">humidity </a></li>
                       <li><a href="graph_ligth.php">light </a></li>
+                      <li><a href="graph_map.php">map </a></li>
                 </div>
             </small>
         </h1>
