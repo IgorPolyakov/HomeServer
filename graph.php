@@ -10,8 +10,8 @@
     <body>
         <h1>Home meteostation on Arduino board v0.<?php include("version.php");  ?>
         	<small>
-        		| Author by Igor Polyakov| 
-        		<a href="index.php">main|</a> 
+        		| Author by Igor Polyakov|
+        		<a href="index.php">main|</a>
         		<a href="map.php">Map|</a>
         		<a href="http://www.vk.com/fox_3">Contact|</a>
         	</small>

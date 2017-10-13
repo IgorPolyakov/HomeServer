@@ -1,2 +1,2 @@
-<?php echo 'Version 0.6 at Mon, 10 Nov 2014 14:44:40 +0600
+<?php echo 'Version 0.9 at Fri, 13 Oct 2017 23:59:39 +0700
 ';
