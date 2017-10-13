@@ -59,7 +59,6 @@
             	// Add a leading zero to the hours value
             	$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
                 }, 1000);
-
             });
         </script>
     </head>
@@ -67,16 +66,15 @@
         <h1>Home meteostation on Arduino board
             <small>
                 <br>
-
-                    <a href="http://www.vk.com/fox_3">Author by Igor Polyakov</a>
+                    <a href="http://dev/null">Author by Igor Polyakov</a>
                 </br>
                 <div class="hr">
-                      <li><a href="index.php">MAIN </a></li>
-                      <li><a href="graph_pres.php"> pressure </a></li>
-                      <li><a href="graph_temp.php">temperature </a></li>
-                      <li><a href="graph_humid.php">humidity </a></li>
-                      <li><a href="graph_ligth.php">light </a></li>
-                      <li><a href="graph_map.php">map </a></li>
+                      <li><a href="index.php">main </a></li>
+                      <li><a href="graph_pres.html"> pressure </a></li>
+                      <li><a href="graph_temp.html">temperature </a></li>
+                      <li><a href="graph_humid.html">humidity </a></li>
+                      <li><a href="graph_ligth.html">light </a></li>
+                      <li><a href="graph_map.html">map </a></li>
                 </div>
             </small>
         </h1>
@@ -93,7 +91,7 @@
             </div>
 	        <h2>
 	        	<?php
-                    $db = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', 'mys1234!@#$');
+                    $db = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', 'sooo_secret_passwd');
                     foreach ($db->query('SELECT * FROM inform WHERE Id=(SELECT MAX(Id) FROM inform)') as $row) {
                         echo  '    '.$row['temperature'].'&deg;C     '.$row['pressure'].'%     '.$row['humidity'].'mm     ';
                         echo $row['light'] == 1 ? 'LIGTH ON':'LIGTH OFF';

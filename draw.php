@@ -1,4 +1,4 @@
-<?php 
+<?php
  /* CAT:Line chart */
 
  /* pChart library inclusions */
@@ -7,7 +7,7 @@
  include("class/pImage.class.php");
 
  /* Create and populate the pData object */
-$db = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', 'mys1234!@#$');
+$db = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', 'sooo_secret_passwd');
 
 $points_tempr = array();
 $points_date = array();

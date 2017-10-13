@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
-        <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false" type="text/javascript"></script> 
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false" type="text/javascript"></script>
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="css/app.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -13,32 +13,32 @@
         <h1>Home meteostation on Arduino board
             <small>
                 <br>
-                    
-                    <a href="http://www.vk.com/fox_3">Author by Igor Polyakov</a>
+
+                    <a href="http://dev/null">Author by Igor Polyakov</a>
                 </br>
                 <div class="hr">
-                      <li><a href="index.php">MAIN </a></li>
-                      <li><a href="graph_pres.php"> pressure </a></li>
-                      <li><a href="graph_temp.php">temperature </a></li>
-                      <li><a href="graph_humid.php">humidity </a></li>
-                      <li><a href="graph_ligth.php">light </a></li>
-                      <li><a href="graph_map.php">map </a></li>
+                      <li><a href="index.php">main </a></li>
+                      <li><a href="graph_pres.html"> pressure </a></li>
+                      <li><a href="graph_temp.html">temperature </a></li>
+                      <li><a href="graph_humid.html">humidity </a></li>
+                      <li><a href="graph_ligth.html">light </a></li>
+                      <li><a href="graph_map.html">map </a></li>
                 </div>
             </small>
         </h1>
         <center>
           <img src="home.png" alt="Mountain View" style="width:680px;height:602px">
-        </center>         
+        </center>
         <center>
-          <div id="map_canvas" style="width: 680px; height: 320px"></div> 
+          <div id="map_canvas" style="width: 680px; height: 320px"></div>
 
-          <script type="text/javascript"> 
+          <script type="text/javascript">
 
           var userLocation = 'ulitsa 19-y Gvardeyskoy Divizii, 11, Tomsk, Tomskaya oblast, Russia';
 
           if (GBrowserIsCompatible()) {
              var geocoder = new GClientGeocoder();
-             geocoder.getLocations(userLocation, function (locations) {         
+             geocoder.getLocations(userLocation, function (locations) {
                 if (locations.Placemark)
                 {
                    var north = locations.Placemark[0].ExtendedData.LatLonBox.north;
@@ -46,7 +46,7 @@
                    var east  = locations.Placemark[0].ExtendedData.LatLonBox.east;
                    var west  = locations.Placemark[0].ExtendedData.LatLonBox.west;
 
-                   var bounds = new GLatLngBounds(new GLatLng(south, west), 
+                   var bounds = new GLatLngBounds(new GLatLng(south, west),
                                                   new GLatLng(north, east));
 
                    var map = new GMap2(document.getElementById("map_canvas"));
@@ -56,7 +56,7 @@
                 }
              });
           }
-          </script> 
+          </script>
         </center>
     </body>
 </html>

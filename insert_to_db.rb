@@ -35,7 +35,7 @@ stop_bits = 1
 data = ''
 
 puts "strart + #{DateTime.now}"
-con = Mysql.new 'localhost', 'root', 'mys1234!@#$', 'data'
+con = Mysql.new 'localhost', 'root', 'sooo_secret_passwd', 'data'
 puts 'connect'
 puts 'insert'
 
