@@ -4,7 +4,7 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
         <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false" type="text/javascript"></script> 
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/app.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>HomeMeteostation <?php include("version.php"); ?> </title>
 

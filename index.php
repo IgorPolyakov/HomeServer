@@ -2,7 +2,7 @@
 <html>
     <head>
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/app.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>HomeMeteostation <?php include("version.php"); ?> </title>
         <style type="text/css">
