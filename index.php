@@ -73,7 +73,7 @@
                       <li><a href="graph_pres.html"> pressure </a></li>
                       <li><a href="graph_temp.html">temperature </a></li>
                       <li><a href="graph_humid.html">humidity </a></li>
-                      <li><a href="graph_ligth.html">light </a></li>
+                      <li><a href="graph_light.html">light </a></li>
                       <li><a href="graph_map.html">map </a></li>
                 </div>
             </small>
@@ -94,7 +94,7 @@
                     $db = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', 'sooo_secret_passwd');
                     foreach ($db->query('SELECT * FROM inform WHERE Id=(SELECT MAX(Id) FROM inform)') as $row) {
                         echo  '    '.$row['temperature'].'&deg;C     '.$row['pressure'].'%     '.$row['humidity'].'mm     ';
-                        echo $row['light'] == 1 ? 'LIGTH ON':'LIGTH OFF';
+                        echo $row['light'] == 1 ? 'light ON':'light OFF';
                     }
                 ?>
 	        </h2>
