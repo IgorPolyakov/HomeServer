@@ -4,7 +4,7 @@
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="css/app.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>HomeMeteostation <?php include("version.php"); ?> </title>
+        <title>HomeMeteostation</title>
         <style type="text/css">
             .container {width: 960px; margin: 0 auto; overflow: hidden;}
             .clock {width:800px; margin:0 auto; padding:30px; border:1px solid #333; color:#fff; }
@@ -67,7 +67,7 @@
         <h1>Home meteostation on Arduino board
             <small>
                 <br>
-                    <?php include("version.php"); ?>
+
                     <a href="http://www.vk.com/fox_3">Author by Igor Polyakov</a>
                 </br>
                 <div class="hr">

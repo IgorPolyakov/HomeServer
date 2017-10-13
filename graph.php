@@ -4,11 +4,11 @@
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="css/app.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>HomeMeteostation v0.<?php include("version.php"); ?></title>
+        <title>HomeMeteostation</title>
 
     </head>
     <body>
-        <h1>Home meteostation on Arduino board v0.<?php include("version.php");  ?>
+        <h1>Home meteostation on Arduino board
         	<small>
         		| Author by Igor Polyakov|
         		<a href="index.php">main|</a>
